@@ -15,9 +15,9 @@ import {
 } from "../model/index.js";
 import { type ChatRequestOptions, getCompletion } from "./api.js";
 import { type ParsedMessage, parseMessageIntoHtml } from "./message-parser.js";
-import sendSvg from "../../assets/icons/send.svg?raw";
-import questionSvg from "../../assets/icons/question.svg?raw";
-import newChatSvg from "../../assets/icons/new-chat.svg?raw";
+import sendSvg from "../../assets/icons/send.svg";
+import questionSvg from "../../assets/icons/question.svg";
+import newChatSvg from "../../assets/icons/new-chat.svg";
 
 export type ChatComponentState = {
   hasError: boolean;
@@ -771,10 +771,4 @@ export class ChatComponent extends LitElement {
       }
     }
   `;
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    "mai-chat": ChatComponent;
-  }
 }
